@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>OnlineJudge</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="header">
+			<h2>OnlineJudge</h2>
+		</div>
+		<div id="navi">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="problems.html">Problems</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		<div id="container">
+			<div id="problems">
+				<h3>Vito’s family</h3>
+				<div id="article">
+					<div style="text-align: left;">
+						<h4>Intro:</h4>
+						<blockquote>
+							The world-known gangster Vito Deadstone is moving to New York. He has a very big family there, all of them living in Lamafia Avenue. Since he will visit all his relatives very often, he is trying to find a house close to them.<br>
+							Vito wants to minimize the total distance to all of them and has blackmailed you to write a program that solves his problem.
+						</blockquote>
+						<h4>Input:</h4>
+						<blockquote>
+							The input consists of several test cases. The first line contains the number of test cases.<br>
+							For each test case you will be given the integer number of relatives r (0 < r < 500) and the street numbers (also integers) s1, s2, ..., si,..., sr where they live (0 < si < 30000). Note that several relatives could live in the same street number.
+						</blockquote>
+						<h4>Output:</h4>
+						<blockquote>
+							For each test case your program must write the minimal sum of distances from the optimal Vito’s house to each one of his relatives.The distance between two street numbers si and sj is dij = |si − sj|.
+						</blockquote>
+						<h4>Sample Input:</h4>
+						<blockquote>
+							2<br>
+							2 2 4<br>
+							3 2 4 6
+						</blockquote>
+						<h4>Sample Output:</h4>
+						<blockquote>
+							2<br>
+							4
+						</blockquote>
+					</div>
+					<div align="center">
+						<form action="answer.html" method="post" style="display: inline;">
+							<input type="submit" name="start1" value="開始作答">
+						</form>
+						<form action="problems.html" method="post" style="display: inline;">
+							<input type="submit" name="back1" value="回上一頁">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="footer">
+			<p style="padding: 0px 15px">&copy; 2018. All rights reserved.</p>
+		</div>
+	</body>
+</html>

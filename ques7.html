@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>OnlineJudge</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="header">
+			<h2>OnlineJudge</h2>
+		</div>
+		<div id="navi">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="problems.html">Problems</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		<div id="container">
+			<div id="problems">
+				<h3>All You Need Is Love</h3>
+				<div id="article">
+					<div style="text-align: left;">
+						<h4>Intro:</h4>
+						<blockquote>
+							There was invented a new powerfull gadget by the International Beautifull Machines corporation called the love machine! Given a string made of binary digits, the love machine answers if it’s made only of love, that is, if all you need is love to build that string. The definition of love for the love machine is another string of binary digits, given by a human operator. Let’s say we have a string L which represents “love” and we give a string S for the love machine. We say that all you need is love to build S, if we can repeatly subtract L from S until we reach L. The subtraction defined here is the same arithmetic subtraction in base 2. By this definition it’s easy to see that if L > S (in binary), then S is not made of love.<br>
+							If S = L then S is obvious made of love.<br>
+							Let’s see an example. Supose S = “11011” and L = “11”. If we reapetly subtract L from S, we get: 11011, 11000, 10101, 10010, 1111, 1100, 1001, 110, 11. So, given this L, all you need is love to build S. Because of some limitations of the love machine, there can be no string with leading zeroes. That is, “0010101”, “01110101”, “011111”, etc. are invalid strings. Strings which have only one digit are also invalid (it’s another limitation).<br>
+							Your task in this problem is: given two valid binary strings, S1 and S2, find if it’s possible to have a valid string L such that both S1 and S2 can be made only of L (i.e. given two valid strings S1 and S2, find if there exists at least one valid string L such as both S1 and S2 are made only of L). For instance, for S1 = 11011 and S2 = 11000, we can have L = 11 such that S1 and S2 are both made only of L (as we can see in the example above).
+						</blockquote>
+						<h4>Input:</h4>
+						<blockquote>
+							The first line of input is a positive integer N < 10000 which stands for the number of teste cases. Then, 2∗N lines will follow. Each pair of lines consists in one test case. Each line of the pair stands for each string (S1 and S2) to be entered as an input for the love machine. No string will have more than 30 characters. You can assume that all strings in the input will be valid acording to the rules above.
+						</blockquote>
+						<h4>Output:</h4>
+						<blockquote>
+							For each string pair, you must print one of the following messages:<br>
+							Pair #p: All you need is love!<br>
+							Pair #p: Love is not all you need!<br>
+							Where p stands for the pair number (starting from 1). You should print the first message if there exists at least one valid string L such as both S1 and S2 can be made only of L. Otherwise, print the second line.
+						</blockquote>
+						<h4>Sample Input:</h4>
+						<blockquote>
+							5<br>
+							11011<br>
+							11000<br>
+							11011<br>
+							11001<br>
+							111111<br>
+							100<br>
+							1000000000<br>
+							110<br>
+							1010<br>
+							100
+						</blockquote>
+						<h4>Sample Output:</h4>
+						<blockquote>
+							Pair #1: All you need is love!<br>
+							Pair #2: Love is not all you need!<br>
+							Pair #3: Love is not all you need!<br>
+							Pair #4: All you need is love!<br>
+							Pair #5: All you need is love!
+						</blockquote>
+					</div>
+					<div align="center">
+						<form action="answer.html" method="post" style="display: inline;">
+							<input type="submit" name="start1" value="開始作答">
+						</form>
+						<form action="problems.html" method="post" style="display: inline;">
+							<input type="submit" name="back1" value="回上一頁">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="footer">
+			<p style="padding: 0px 15px">&copy; 2018. All rights reserved.</p>
+		</div>
+	</body>
+</html>

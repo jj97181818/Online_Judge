@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>OnlineJudge</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="header">
+			<h2>OnlineJudge</h2>
+		</div>
+		<div id="navi">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="problems.html">Problems</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		<div id="container">
+			<div id="problems">
+				<h3>What’s Cryptanalysis?</h3>
+				<div id="article">
+					<div style="text-align: left;">
+						<h4>Intro:</h4>
+						<blockquote>
+							Cryptanalysis is the process of breaking someone else’s cryptographic writing. This sometimes involves some kind of statistical analysis of a passage of (encrypted) text. Your task is to write a program which performs a simple analysis of a given text.
+						</blockquote>
+						<h4>Input:</h4>
+						<blockquote>
+							The first line of input contains a single positive decimal integer n. This is the number of lines which follow in the input. The next nlines will contain zero or more characters (possibly including whitespace). This is the text which must be analyzed.
+						</blockquote>
+						<h4>Output:</h4>
+						<blockquote>
+							Each line of output contains a single uppercase letter, followed by a single space, then followed by a positive decimal integer. The integer indicates how many times the corresponding letter appears in the input text. Upper and lower case letters in the input are to be considered the same. No other characters must be counted. The output must be sorted in descending count order; that is, the most frequent letter is on the first output line, and the last line of output indicates the least frequent letter. If two letters have the same frequency, then the letter which comes first in the alphabet must appear first in the output. If a letter does not appear in the text, then that letter must not appear in the output.
+						</blockquote>
+						<h4>Sample Input:</h4>
+						<blockquote>
+							3<br>
+							This is a test.<br>
+							Count me 1 2 3 4 5.<br>
+							Wow!!!! Is this question easy?
+						</blockquote>
+						<h4>Sample Output:</h4>
+						<blockquote>
+							S 7<br>
+							T 6<br>
+							I 5<br>
+							E 4<br>
+							O 3<br>
+							A 2<br>
+							H 2<br>
+							N 2<br>
+							U 2<br>
+							W 2<br>
+							C 1<br>
+							M 1<br>
+							Q 1<br>
+							Y 1
+						</blockquote>
+					</div>
+					<div align="center">
+						<form action="answer.html" method="post" style="display: inline;">
+							<input type="submit" name="start1" value="開始作答">
+						</form>
+						<form action="problems.html" method="post" style="display: inline;">
+							<input type="submit" name="back1" value="回上一頁">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="footer">
+			<p style="padding: 0px 15px">&copy; 2018. All rights reserved.</p>
+		</div>
+	</body>
+</html>

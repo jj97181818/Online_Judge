@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>OnlineJudge</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="header">
+			<h2>OnlineJudge</h2>
+		</div>
+		<div id="navi">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="problems.html">Problems</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		<div id="container">
+			<div id="problems">
+				<h3>A mid-summer night’s dream</h3>
+				<div id="article">
+					<div style="text-align: left;">
+						<h4>Intro:</h4>
+						<blockquote>
+							In a mid-summer night the scientist has a dream where he sees a lot of unsigned integer numbers flying around. He records them with the help of his computer, then he has a clue that if the numbers are (X1, X2, …, Xn). He will have to find an integer number A (This A is the combination lock code) such that (|X1 − A| + |X2 − A| + . . . + |Xn − A|) is minimum.
+						</blockquote>
+						<h4>Input:</h4>
+						<blockquote>
+							Input will contain several blocks. Each block will start with a number n (0 < n ≤ 1000000) indicating how many numbers he saw in the dream. Next there will be n numbers. All the numbers will be less that 65536. The input will be terminated by end of file.
+						</blockquote>
+						<h4>Output:</h4>
+						<blockquote>
+							For each set of input there will be one line of output. That line will contain the minimum possible value for A. Next it will contain how many numbers are there in the input that satisfy the property of A (The summation of absolute deviation from A is minimum). And finally you have to print how many possible different integer values are there for A (these values need not be present in the input).
+							These numbers will be separated by single space.
+						</blockquote>
+						<h4>Sample Input:</h4>
+						<blockquote>
+							2<br>
+							10<br>
+							10<br>
+							4<br>
+							1<br>
+							2<br>
+							2<br>
+							4
+						</blockquote>
+						<h4>Sample Output:</h4>
+						<blockquote>
+							10 2 1<br>
+							2 2 1
+						</blockquote>
+					</div>
+					<div align="center">
+						<form action="answer.html" method="post" style="display: inline;">
+							<input type="submit" name="start1" value="開始作答">
+						</form>
+						<form action="problems.html" method="post" style="display: inline;">
+							<input type="submit" name="back1" value="回上一頁">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="footer">
+			<p style="padding: 0px 15px">&copy; 2018. All rights reserved.</p>
+		</div>
+	</body>
+</html>

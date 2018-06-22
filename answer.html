@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>OnlineJudge</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="header">
+			<h2>OnlineJudge</h2>
+		</div>
+		<div id="navi">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="problems.html">Problems</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		<div id="container" style="height: 600px">
+			<div id="problems">
+				<h3>Your Answer</h3>
+				<div id="article" style="background-color: silver;" align="center">
+					<form>
+						<textarea name="code" rows="20" cols="75" placeholder="Put your code here."></textarea>
+					</form>
+					<br><br>
+					<form action="problems.html" method="post">
+						<input type="submit" name="start2" value="確定繳交">
+						<input type="submit" name="back2" value="下次再來">
+						<!--考慮用JS onclick()函式-->
+					</form>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="footer">
+			<p style="padding: 0px 15px">&copy; 2018. All rights reserved.</p>
+		</div>
+	</body>
+</html>

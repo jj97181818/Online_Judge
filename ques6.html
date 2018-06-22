@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>OnlineJudge</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="header">
+			<h2>OnlineJudge</h2>
+		</div>
+		<div id="navi">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="problems.html">Problems</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		<div id="container">
+			<div id="problems">
+				<h3>Minesweeper</h3>
+				<div id="article">
+					<div style="text-align: left;">
+						<h4>Intro:</h4>
+						<blockquote>
+							Have you ever played Minesweeper? It’s a cute little game which comes within a certain Operating System which name we can’t really remember. Well, the goal of the game is to find where are all the mines within a M ×N field. To help you, the game shows a number in a square which tells you how many mines there are adjacent to that square. For instance, supose the following 4 ×4 field with 2 mines (which are represented by an ‘*’ character):<br><br>
+							*...<br>....<br>.*..<br>....<br><br>
+							If we would represent the same field placing the hint numbers described above, we would end up with:<br><br>
+							*100<br>2210<br>1*10<br>1110<br><br>
+							As you may have already noticed, each square may have at most 8 adjacent squares.
+						</blockquote>
+						<h4>Input:</h4>
+						<blockquote>
+							The input will consist of an arbitrary number of fields. The first line of each field contains two integers n and m (0 < n, m ≤100) which stands for the number of lines and columns of the field respectively. The next n lines contains exactly m characters and represent the field.<br>
+							Each safe square is represented by an ‘.’ character (without the quotes) and each mine square is represented by an ‘*’ character (also without the quotes). The first field line where n = m = 0 represents the end of input and should not be processed.
+						</blockquote>
+						<h4>Output:</h4>
+						<blockquote>
+							For each field, you must print the following message in a line alone:<br>
+							Field #x:<br>
+							Where x stands for the number of the field (starting from 1). The next n lines should contain the field with the ‘.’ characters replaced by the number of adjacent mines to that square. There must be an empty line between field outputs.
+						</blockquote>
+						<h4>Sample Input:</h4>
+						<blockquote>
+							4 4<br>
+							*...<br>
+							....<br>
+							.*..<br>
+							....<br>
+							3 5<br>
+							**...<br>
+							.....<br>
+							.*...<br>
+							0 0
+						</blockquote>
+						<h4>Sample Output:</h4>
+						<blockquote>
+							Field #1:<br>
+							*100<br>
+							2210<br>
+							1*10<br>
+							1110<br><br>
+							Field #2:<br>
+							**100<br>
+							33200<br>
+							1*100
+						</blockquote>
+					</div>
+					<div align="center">
+						<form action="answer.html" method="post" style="display: inline;">
+							<input type="submit" name="start1" value="開始作答">
+						</form>
+						<form action="problems.html" method="post" style="display: inline;">
+							<input type="submit" name="back1" value="回上一頁">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="footer">
+			<p style="padding: 0px 15px">&copy; 2018. All rights reserved.</p>
+		</div>
+	</body>
+</html>

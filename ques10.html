@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>OnlineJudge</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="header">
+			<h2>OnlineJudge</h2>
+		</div>
+		<div id="navi">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="problems.html">Problems</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		<div id="container">
+			<div id="problems">
+				<h3>Doom’s Day Algorithm</h3>
+				<div id="article">
+					<div style="text-align: left;">
+						<h4>Intro:</h4>
+						<blockquote>
+							No. Doom’s day algorithm is not a method to compute which day the world will end. It is an algorithm created by the mathematician John Horton Conway, to calculate which day of the week (Monday, Tuesday, etc.) corresponds to a certain date.<br>
+							This algorithm is based in the idea of the doomsday, a certain day of the week which always occurs in the same dates. For example, 4/4 (the 4th of April), 6/6 (the 6th of June), 8/8 (the 8th of August), 10/10 (the 10th of October) and 12/12 (the 12th of December) are dates which always occur in doomsday. All years have their own doomsday.<br>
+							In year 2011, doomsday is Monday. So all of 4/4, 6/6, 8/8, 10/10 and 12/12 are Mondays. Using that information, you can easily compute any other date. For example, the 13th of December 2011 will be Tuesday, the 14th of December 2011 will be Wednesday, etc.
+							Other days which occur on doomsday are 5/9, 9/5, 7/11 and 11/7. Also, in leap years, we have the following doomsdays: 1/11 (the 11th of January) and 2/22 (the 22nd of Febrary), and in non-leap years 1/10 and 2/21.<br>
+							Given a date of year 2011, you have to compute which day of the week it occurs.
+						</blockquote>
+						<h4>Input:</h4>
+						<blockquote>
+							The input can contain different test cases. The first line of the input indicates the number of test cases.<br>
+							For each test case, there is a line with two numbers: M D. M represents the month (from 1 to 12) and Drepresents the day (from 1 to 31). The date will always be valid.
+						</blockquote>
+						<h4>Output:</h4>
+						<blockquote>
+							For each test case, you have to output the day of the week where that date occurs in 2011. The days of the week will be: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.
+						</blockquote>
+						<h4>Sample Input:</h4>
+						<blockquote>
+							8<br>
+							1 6<br>
+							2 28<br>
+							4 5<br>
+							5 26<br>
+							8 1<br>
+							11 1<br>
+							12 25<br>
+							12 31
+						</blockquote>
+						<h4>Sample Output:</h4>
+						<blockquote>
+							Thursday<br>
+							Monday<br>
+							Tuesday<br>
+							Thursday<br>
+							Monday<br>
+							Tuesday<br>
+							Sunday<br>
+							Saturday
+						</blockquote>
+					</div>
+					<div align="center">
+						<form action="answer.html" method="post" style="display: inline;">
+							<input type="submit" name="start1" value="開始作答">
+						</form>
+						<form action="problems.html" method="post" style="display: inline;">
+							<input type="submit" name="back1" value="回上一頁">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="footer">
+			<p style="padding: 0px 15px">&copy; 2018. All rights reserved.</p>
+		</div>
+	</body>
+</html>
