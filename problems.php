@@ -22,7 +22,6 @@
 				<?php
 				$input=fopen("result.txt","r");
 				$res=fread($input, "2");
-				$size=strlen($res);
 				fclose($input);
 				?>
 				<div id="article" align="center">
@@ -42,7 +41,7 @@
 							<td><a href="ques2.html">Vito’s family</a></td>
 							<td>
 							<?php
-							if($size==0)
+							if(strlen($res)==0)
 							{
 								echo "-";
 							}	
