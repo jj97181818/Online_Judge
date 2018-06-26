@@ -22,6 +22,7 @@
 				<?php
 				$input=fopen("result.txt","r");
 				$res=fread($input, "2");
+				$size=strlen($res);
 				fclose($input);
 				?>
 				<div id="article" align="center">
@@ -39,16 +40,18 @@
 						<tr>
 							<td>02</td>
 							<td><a href="ques2.html">Vito’s family</a></td>
+							<td>
 							<?php
-							if(!is_null($res))
+							if($size==0)
 							{
-								echo "<td> $res </td>";
+								echo "-";
 							}	
 							else
 							{
-								echo "<td>-</td>";
+								echo $res;
 							}
 							?>
+							</td>
 						</tr>
 						<tr>
 							<td>03</td>
