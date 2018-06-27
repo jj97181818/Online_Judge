@@ -17,14 +17,24 @@
 			</ul>
 		</div>
 		<div id="container" style="height: 600px">
-			<div id="problems">
-				<h3>Your Answer</h3>
-				<div id="article" style="background-color: silver;" align="center">
-					<form action="problems.php" method="post">
-						<textarea name="code" rows="20" cols="75" placeholder="Put your code here."></textarea>
+			<div id="member">
+				<h3>Login</h3>
+				<br>
+				<div id="article" style="background-color: silver;">
+					<form action="#" method="post">
+						<div style="width: 75%;margin: 0px auto;text-align: left;">
+							<p>E-mail</p><input type="text" name="account_l" size="35">
+							<p>Password</p><input type="password" name="password_l" size="35">
+						</div>
 						<br><br>
-						<input type="submit" name="start2" value="確定繳交">
+						<input type="submit" name="login" value="登入">
+						<br><br>
 					</form>
+					<div style="width: 90%;margin: 0px auto">
+						<div id="password_forgot"><a href="#">Forgot?</a></div>
+						<div id="new_account"><a href="register.html">Register</a></div>
+					</div>
+					<div id="clear"></div>
 				</div>
 			</div>
 		</div>

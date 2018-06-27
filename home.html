@@ -13,7 +13,7 @@
 			<ul>
 				<li><a href="home.html">Home</a></li>
 				<li><a href="problems.php">Problems</a></li>
-				<li><a href="login.html">Login</a></li>
+				<li><a href="login.php">Login</a></li>
 			</ul>
 		</div>
 		<div id="container" style="height: 600px">
